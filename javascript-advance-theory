@@ -54,6 +54,17 @@ var myFunc = User('RIZWAN');
 myFunc('Welcome '); //Output: Welcome RIZWAN
 myFunc('Hello '); //output: Hello RIZWAN
 
+//another example of closure
+const add = (function () {
+  let counter = 0;
+  var plus = function () {counter += 1; return counter}
+  return plus;
+})();
+
+add();
+add();
+add();
+
 
 4.Hoisting:
 
