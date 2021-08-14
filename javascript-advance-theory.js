@@ -1,5 +1,5 @@
 // 15 JavaScript Advance concepts
-1. JavaScript Prototype
+ 1. JavaScript Prototype
 
 Let me explain the various way of creating objects in JavaScript.
 One of the ways to create objects in JavaScript is the constructor function.
