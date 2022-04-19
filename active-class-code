@@ -1,0 +1,22 @@
+   $(document).ready(function () {
+        $("ul li").on("click", function () {
+          $("ul li").removeClass("active");
+          $(this).addClass("active");
+
+          // var bgColor = $(this).data("skin");
+         // $("body").css("background-color", bgColor);
+        //  $("body").css("transition","0.8s")
+        });
+      });
+      
+      //css
+      ul li.active {
+        border: 2px solid #fff;
+      }
+      
+      
+      //html
+      
+      <ul>
+      <li class=""active>list</li>
+      </ul>
