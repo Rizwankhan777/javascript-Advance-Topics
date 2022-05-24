@@ -8,15 +8,6 @@ document.write('Hello, World!');
 
 2-- Add and subtract and multiplication and division two numbers
 
-Assignment Operators
-Arithmetic Operators
-Comparison Operators
-Logical Operators
-Bitwise Operators
-String Operators
-Other Operators
-
-
 const num1 = 5;
 const num2 = 3;
 
@@ -26,7 +17,7 @@ const sum = num1 + num2;
 // display the sum
 console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
 
-2--- Add two numbers entered by the users
+3--- Add two numbers entered by the users
 
 // store input numbers
 const num1 = parseInt(prompt('Enter the first number '));
@@ -53,8 +44,7 @@ for(var i = 1; i <= 100; i += 2)
     console.log(i);
 }
 
-
-Coding challenge #3: Print the multiplication table with 7
+Coding challenge #4: Print the multiplication table with 7
 
 for(var i = 1; i <= 10; i++)
 {
@@ -62,7 +52,7 @@ for(var i = 1; i <= 10; i++)
     console.log(row);
 }
 
-Coding challenge #4: Print all the multiplication tables with numbers from 1 to 10
+Coding challenge #5: Print all the multiplication tables with numbers from 1 to 10
 
 
 for(var i = 1; i <= 10; i++)
@@ -81,7 +71,7 @@ function printTable(n)
 }
 
 
-Coding challenge #5: Calculate the sum of numbers from 1 to 10
+Coding challenge #6: Calculate the sum of numbers from 1 to 10
 
 
 var sum = 0;
@@ -94,7 +84,7 @@ for(var i = 1; i <= 10; i++)
 println(sum);
 
 
-Coding challenge #6: Create a function that will convert from Celsius to Fahrenheit
+Coding challenge #7: Create a function that will convert from Celsius to Fahrenheit
 
 function celsiusToFahrenheit(n)
 {
@@ -104,8 +94,7 @@ function celsiusToFahrenheit(n)
 var r = celsiusToFahrenheit(20);
 console.log(r);
 
-
-Coding challenge #7: Create a function that will convert from Fahrenheit to Celsius
+Coding challenge #8: Create a function that will convert from Fahrenheit to Celsius
 
 function fahrenheitToCelsius(n)
 {
@@ -116,7 +105,7 @@ var r = fahrenheitToCelsius(68);
 console.log(r);
 
 
-Coding challenge #8: Find the maximum number in an array of numbers
+Coding challenge #9: Find the maximum number in an array of numbers
 
 
 function findMax(ar)
@@ -133,15 +122,12 @@ function findMax(ar)
     
     return max;
 }
-
 var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 var max = findMax(ar);
 println("Max: ", max);
 
 
-
-
-Coding challenge #22: Reverse an array
+Coding challenge #10: Reverse an array
 
 var ar = [1, 2, 3];
 var ar2 = reverseArray(ar);
@@ -159,10 +145,7 @@ function reverseArray(ar)
     return ar2;
 }
 
-
-Coding challenge #24: Create a function that will merge two arrays and return the result as a new array
-
-
+Coding challenge #11: Create a function that will merge two arrays and return the result as a new array
 
 
 var ar1 = [1, 2, 3];
@@ -188,9 +171,7 @@ function mergeArrays(ar1, ar2)
    return ar;
 }
 
-
-
-3 --- JavaScript - how to square a number in three easy ways
+12 --- JavaScript - how to square a number in three easy ways
 
 first method --
 
@@ -210,7 +191,7 @@ function square(num){
 console.log(square(2)); // 4
 
 
-4---find the square root of the number
+13---find the square root of the number
 
 // take the input from the user
 const number = prompt('Enter the number: ');
@@ -220,7 +201,7 @@ const result = Math.sqrt(number);
 console.log(`The square root of ${number} is ${result}`);
 
 
-5-- //JavaScript program to swap two variables
+14-- //JavaScript program to swap two variables
 
 //take input from the users
 let a = prompt('Enter the first variable: ');
@@ -238,7 +219,7 @@ console.log(`The value of a after swapping: ${a}`);
 console.log(`The value of b after swapping: ${b}`);
 
 
-6-- The difference between a given number and 13
+15-- The difference between a given number and 13
 
 function difference(n)
  {
@@ -252,7 +233,7 @@ console.log(difference(11))
 
 
 
-7--
+16--
 
 // program to count the number of vowels in a string
 
@@ -274,7 +255,7 @@ console.log(result);
 
 
 
-Example 2: Count the Number of Vowels Using for Loop
+17-- Example 2: Count the Number of Vowels Using for Loop
 // program to count the number of vowels in a string
 
 // defining vowels
