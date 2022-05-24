@@ -1,0 +1,303 @@
+1-- Hello world program
+// the hello world program
+console.log('Hello World');
+// the hello world program
+alert("Hello, World!");
+// the hello world program
+document.write('Hello, World!');
+
+2-- Add and subtract and multiplication and division two numbers
+
+Assignment Operators
+Arithmetic Operators
+Comparison Operators
+Logical Operators
+Bitwise Operators
+String Operators
+Other Operators
+
+
+const num1 = 5;
+const num2 = 3;
+
+// add two numbers
+const sum = num1 + num2;
+
+// display the sum
+console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
+
+2--- Add two numbers entered by the users
+
+// store input numbers
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+
+//add two numbers
+const sum = num1 + num2;
+
+// display the sum
+console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+
+
+Coding challenge #1: Print numbers from 1 to 10
+
+for(var i = 1; i <= 10; i++)
+{
+    console.log(i);
+}
+
+Coding challenge #2: Print the odd numbers less than 100
+
+for(var i = 1; i <= 100; i += 2)
+{
+    console.log(i);
+}
+
+
+Coding challenge #3: Print the multiplication table with 7
+
+for(var i = 1; i <= 10; i++)
+{
+    var row = "7 * " + i + " = " + 7 * i;
+    console.log(row);
+}
+
+Coding challenge #4: Print all the multiplication tables with numbers from 1 to 10
+
+
+for(var i = 1; i <= 10; i++)
+{
+    printTable(i);
+    println("");
+}
+
+function printTable(n)
+{
+    for(var i = 1; i <= 10; i++)
+    {
+        var row = n + " * " + i + " = " + n * i;
+        println(row);
+    }
+}
+
+
+Coding challenge #5: Calculate the sum of numbers from 1 to 10
+
+
+var sum = 0;
+
+for(var i = 1; i <= 10; i++)
+{
+    sum += i;
+}
+
+println(sum);
+
+
+Coding challenge #6: Create a function that will convert from Celsius to Fahrenheit
+
+function celsiusToFahrenheit(n)
+{
+    return n * 1.8 + 32;
+}
+
+var r = celsiusToFahrenheit(20);
+console.log(r);
+
+
+Coding challenge #7: Create a function that will convert from Fahrenheit to Celsius
+
+function fahrenheitToCelsius(n)
+{
+    return (n - 32) / 1.8;
+}
+
+var r = fahrenheitToCelsius(68);
+console.log(r);
+
+
+Coding challenge #8: Find the maximum number in an array of numbers
+
+
+function findMax(ar)
+{
+    var max = ar[0];
+    
+    for(var i = 0; i < ar.length; i++)
+    {
+        if (ar[i] > max)
+        {
+            max = ar[i];
+        }
+    }
+    
+    return max;
+}
+
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+println("Max: ", max);
+
+
+
+
+Coding challenge #22: Reverse an array
+
+var ar = [1, 2, 3];
+var ar2 = reverseArray(ar);
+println(ar2);
+
+function reverseArray(ar)
+{
+    var ar2 = [];
+    
+    for(var i = ar.length - 1; i >= 0; i--)
+    {
+        ar2.push(ar[i]);
+    }
+    
+    return ar2;
+}
+
+
+Coding challenge #24: Create a function that will merge two arrays and return the result as a new array
+
+
+
+
+var ar1 = [1, 2, 3];
+var ar2 = [4, 5, 6];
+
+var ar = mergeArrays(ar1, ar2);
+println(ar);
+
+function mergeArrays(ar1, ar2)
+{
+   var ar = [];
+   
+   for(let el of ar1)
+   {
+       ar.push(el);
+   }
+   
+   for(let el of ar2)
+   {
+       ar.push(el);
+   }
+   
+   return ar;
+}
+
+
+
+3 --- JavaScript - how to square a number in three easy ways
+
+first method --
+
+let num = Math.pow(2, 4);
+console.log(num); // 16
+
+second method --
+exponentiation operator
+let num = 2 ** 3 // 2*2*2 = 8
+
+third method --
+by own function
+
+function square(num){
+  return num * num;
+}
+console.log(square(2)); // 4
+
+
+4---find the square root of the number
+
+// take the input from the user
+const number = prompt('Enter the number: ');
+
+built-in method
+const result = Math.sqrt(number);
+console.log(`The square root of ${number} is ${result}`);
+
+
+5-- //JavaScript program to swap two variables
+
+//take input from the users
+let a = prompt('Enter the first variable: ');
+let b = prompt('Enter the second variable: ');
+
+//create a temporary variable
+let temp;
+
+//swap variables
+temp = a;
+a = b;
+b = temp;
+
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
+
+
+6-- The difference between a given number and 13
+
+function difference(n)
+ {
+    if (n <= 13)
+        return 13 - n;
+    else
+        return (n - 13) * 2;
+ }
+console.log(difference(32))
+console.log(difference(11))
+
+
+
+7--
+
+// program to count the number of vowels in a string
+
+function countVowel(str) { 
+
+    // find the count of vowels
+    const count = str.match(/[aeiou]/gi).length;
+
+    // return number of vowels
+    return count;
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
+
+
+
+Example 2: Count the Number of Vowels Using for Loop
+// program to count the number of vowels in a string
+
+// defining vowels
+const vowels = ["a", "e", "i", "o", "u"]
+
+function countVowel(str) {
+    // initialize count
+    let count = 0;
+
+    // loop through string to test if each character is a vowel
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    // return number of vowels
+    return count
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
