@@ -1,0 +1,317 @@
+
+#program-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!doctype html>
+    <html>
+
+        <script>
+            document.getElementsByClassName("secondDiv").style.background = "red"
+            function jsFun() {
+                var val, elem;
+                val = parseInt(document.getElementById("num").value);
+                if (val) {
+                    if (val <=10)
+                        document.getElementById("paraTwo").innerHTML = "Less than 10";
+                    else
+                        document.getElementById("paraTwo").innerHTML = "Greater than 10";
+                }
+            }
+        </script>
+    </head>
+
+    <style>
+        .mainDiv{
+            width: 30%;
+            margin: auto;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        input#num {
+    border: none;
+    border-bottom: 1px solid #000 !important;
+    padding-top: 10px;
+}
+button {
+    padding: 2px 29px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.secondDiv{
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 30%;
+            margin: auto;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 70%;
+            position: absolute;
+}
+
+    </style>
+
+
+<body>
+
+  <div class="mainDiv">
+    <p id="paraOne">Enter a Number: <input id="num">
+        <button onclick="jsFun()">Enter</button>
+    </p>
+    
+
+  </div>
+  <div class="secondDiv">
+    <p id="paraTwo"></p>
+  </div>
+
+</body>
+
+</html>
+
+
+#program-2
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!doctype html>
+    <html>
+
+  
+    </head>
+
+    <style>
+           h1{
+      font-size: 2.50rem;
+     
+   }
+    label{
+        line-height: 50px;
+
+        font-size: 1.50rem;
+   }
+
+   .mainDiv{
+            width: 30%;
+            margin: auto;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 30%;
+            position: absolute;
+            box-shadow: rgba(112, 211, 250, 0.25) 0px 50px 100px -20px, rgba(71, 227, 248, 0.3) 0px 30px 60px -30px;
+            border: 1px solid rgb(44, 213, 255);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        .secondDiv{
+    padding: 20px;
+    width: 30%;
+            margin: auto;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 40%;
+            position: absolute;
+            border: 1px solid rgb(89, 252, 252);
+            margin-top: 10%;
+            background: hsla(187, 82%, 65%, 0.2);
+            border-radius: 10px;
+
+
+}
+li{
+    color: red;
+}
+input{
+    border: 1px solid rgb(40, 223, 255);
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+}
+button{
+    padding: 8px 20px;
+    background-color: rgb(55, 225, 255);
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+}
+    </style>
+
+<body>
+
+    <h1>Grocery Bucket</h1>
+<div class="mainDiv">
+    <div>
+    <label>Enter your favouirte grocery</label>
+    <input class="txtName" type="text" />
+    <button class="btnName">Save</button>
+    </div>
+</div>
+ <div class="secondDiv">
+    <h2>Item List</h2>
+    <ul class="listOfName">
+        <button class="clearbutton">clear All</button>
+    </ul>
+ </div>
+    <script>
+       const buttonName = document.querySelector('.btnName')
+       const addName = e => {
+          let nameTxt = document.querySelector('.txtName'),
+          name = nameTxt.value.trim()
+          if (name) {
+             let tagLi = document.createElement('li')
+             tagLi.textContent = name
+             alert("Item Added")
+             document.querySelector('.listOfName').appendChild(tagLi)
+             nameTxt.value = ''
+          }
+       }
+           buttonName.addEventListener('click', addName)
+           
+    </script>
+
+</body>
+
+</html>
+
+
+#program-3  Check Number Type with if...else if...else
+<script>
+    // program that checks if the number is positive, negative or zero
+// input from the user
+const number = parseInt(prompt("Enter a number: "));
+
+// check if number is greater than 0
+if (number > 0) {
+    console.log("The number is positive");
+}
+
+// check if number is 0
+else if (number == 0) {
+  console.log("The number is zero");
+}
+
+// if number is less than 0
+else {
+     console.log("The number is negative");
+}
+</script>
+
+#program-4 // generating a random number
+
+const a = Math.floor(Math.random() * (10 - 1)) + 1;
+console.log(`Random value between 1 and 10 is ${a}`);
+
+#program-5 Javascript Program to Check if a Number is Odd or Even
+// program to check if the number is even or odd
+// take input from the user
+const number = prompt("Enter a number: ");
+
+//check if the number is even
+if(number % 2 == 0) {
+    console.log("The number is even.");
+}
+
+// if the number is odd
+else {
+    console.log("The number is odd.");
+}
+
+3program-5 example -2 // program to check if the number is even or odd
+
+// take input from the user
+const number = prompt("Enter a number: ");
+
+// ternary operator
+const result = (number % 2  == 0) ? "even" : "odd";
+
+// display the result
+console.log(`The number is ${result}.`);
+
+
+#program-6  // program to find the largest among three numbers
+
+// take input from the user
+const num1 = parseFloat(prompt("Enter first number: "));
+const num2 = parseFloat(prompt("Enter second number: "));
+const num3 = parseFloat(prompt("Enter third number: "));
+let largest;
+
+// check the condition
+if(num1 >= num2 && num1 >= num3) {
+    largest = num1;
+}
+else if (num2 >= num1 && num2 >= num3) {
+    largest = num2;
+}
+else {
+    largest = num3;
+}
+
+// display the result
+console.log("The largest number is " + largest);
+
+#program-6 example-2
+
+// program to find the largest among three numbers
+
+// take input from the user
+const num1 = parseFloat(prompt("Enter first number: "));
+const num2 = parseFloat(prompt("Enter second number: "));
+const num3 = parseFloat(prompt("Enter third number: "));
+
+const largest = Math.max(num1, num2, num3);
+
+// display the result
+console.log("The largest number is " + largest);
+
+#program-7 JavaScript Program to Find the Factorial of a Number
+
+
+// program to find the factorial of a number
+
+// take input from the user
+const number = parseInt(prompt('Enter a positive integer: '));
+
+// checking if number is negative
+if (number < 0) {
+    console.log('Error! Factorial for negative number does not exist.');
+}
+
+// if number is 0
+else if (number === 0) {
+    console.log(`The factorial of ${number} is 1.`);
+}
+
+// if number is positive
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    console.log(`The factorial of ${number} is ${fact}.`);
+}
