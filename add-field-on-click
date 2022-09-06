@@ -1,0 +1,21 @@
+$(document).ready(function() {
+  
+  $("#addmore").click(function() {
+    // var count = 2;
+    $('.count').html(function(i, val) { return val*1+1 });
+    $("#req_input")
+    .append('<div class="required_inp"> <div class="col-md-4 mx-auto"><h4>CHAPTER <span class="count" style="color:red">2</span></h4>    </div>  <div class="row mb-4">  <label for="inputPassword" class="col-sm-4 mb-4 text-right col-form-label">Chapter Name</label>  	<div class="col-sm-6"> <input type="text" class="form-control" id="" placeholder="Chapter name..."></div>   <label for="inputPassword" class="col-sm-4 text-right col-form-label">Chapter Details</label>  	<div class="col-sm-6"> <input type="text" class="form-control" id="" placeholder="Chapter details..."></div> </div> <input type="button" class="btn btn-danger text-center inputRemove" value="Remove"/> </div>');
+  });
+  $('body').on('click','.inputRemove',function() {
+    $(this).parent('div.required_inp').remove()
+  });
+});
+
+
+
+// html
+
+
+  <div id="req_input" class="datainputs">
+			
+	</div>
